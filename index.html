@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #99a3a4;
+            font-family: Georgia, serif;
+        }
+
+        .header {
+            display: flex;
+            background-color: #f2a900;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 26px;
+        }
+
+        .menu {
+            display: flex;
+            background-color: #707372;
+            justify-content: space-around;
+        }
+
+        .menu a {
+            display: flex;
+            color: white;
+            text-decoration: none;
+            width: 33.3%;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+        }
+
+        .content {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 16px;
+        }
+
+        .highlight {
+            color: #f2a900;
+            font-weight: 900;
+        }
+
+        .titre {
+            border-radius: 15px;
+            padding: 5PX;
+            display: inline-block;
+            color: white;
+            background-color: #f2a900
+        }
+
+        .cadre {
+            border: thick double #000;
+            padding-left: 16px;
+            padding-right: 16px;
+            background-color: #dadada;
+        }
+
+        .organigramme{
+            display: flex;
+            flex-flow: row;
+        }
+
+        .centered_box{
+            display: flex;
+            justify-content: center;
+        }
+
+        .imagebureau {
+            border-radius: 20px;
+            width: 492px;
+            height: 328px;
+            border: 2px solid #000000;
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+
+        .imageorga {
+            border-radius: 20px;
+            width: 246x;
+            height: 164px;
+            border: 2px solid #000000;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Mon rapport de stage de 3e</div>
+    <nav class="menu">
+        <a href="#programme">Programme</a>
+        <div class="sousmenu-container">
+        </div>
+        <a href="#vocabulaire">Vocabulaire</a>
+        <a href="#services">Les différents services dans cette entreprise</a>
+    </nav>
+
+    <div class="content">
+        <h3>
+            <p id="programme" class="titre">Ce que j’ai fais :</p>
+        </h3>
+
+        <nav class="cadre">
+            <h4><p><u>Lundi 20/01 :</u></p></h4>
+
+            <p>9h début du stage, mon maître de stage me présente leur projet de développement appelé <span
+                    class="highlight">Qualaxy</span>, par la suite il me présente à toute l’équipe de CT Infodream.
+            </p>
+            <p>Vers 10h le <span class="highlight">Product Owner</span> me présente son rôle dans une équipe scrum et
+                comment il s'organise.
+                Ensuite à 11h la <span class="highlight">Scrum Master</span> me présente elle aussi son travail dans une
+                équipe scrum puis me montre aussi comment se compose leurs équipes.
+            </p>
+            <p>14h-15h : réunion copil :</p>
+            <ul>
+                <li>explications des bugs reçus depuis un ticket pour ensuite réfléchir comment les régler mais aussi
+                    améliorer certaines interfaces du logiciel pour une meilleure prise en main.</li>
+                <li>les personnes présentes étaient : product owner, responsable quality assurance, responsable dev,
+                    responsable service client, responsable support</li>
+            </ul>
+            <p>Les bugs sont généralement trouvés par les clients qui sont ensuite envoyés au support où ils vont
+                essayer de reproduire le bug pour pouvoir en faire un ticket et donc le régler.
+            </p>
+            <p>Le logiciel en projet s'appelant <span class="highlight">Qualaxy</span> est fait pour faciliter certaines
+                tâches aux industries.
+            </p>
+            <p>Le langage utilisé pour le développement du logiciel est est le <span class="highlight">C# (C
+                    Sharp)</span> avec l’application <span class="highlight">Microsoft Visual Studio</span>.
+            </p>
+            <p>Par la suite à 15h30 un développeur m’explique comment se déroule leur travail, comment ils programment,
+                le langage qu’ils utilisent, les logiciels utilisés…
+                Pour finir à 16h45 le <span class="highlight">Testeur</span> me montre comment ils sont organisés pour
+                régler les bugs au plus vite mais aussi comment les régler grâce à leurs logiciels mais aussi grâce à un
+                robot qu’ils ont programmé pour le faire automatiquement plus rapidement.
+            </p>
+
+            <h4><p><u>Mardi 21/01 :</u></p></h4>
+
+            <p>De 9h30 à 10h le responsable <span class="highlight">commercial / marketing</span> m'a parlé de ses
+                différents moyens d'acquérir de nouveaux clients.
+                Comme plusieurs exemples il y a :
+            </p>
+            <ul>
+                <li><span class="highlight">le webinaire :</span> formes de réunions interactives de type séminaire
+                    faites par Internet généralement dans un but de travail collaboratif ou de transmission
+                    d'informations pour une audience plus ou moins importante en nombre</li>
+                <il><span class="highlight">la prospection à froid :</span> est une technique de démarchage commerciale
+                    qui consiste à contacter des clients potentiels de manière directe et spontanée. Elle vise à générer
+                    des leads et développer son portefeuille client.
+                </il>
+                <li><span class="highlight">le SEO :</span> est un processus d'optimisation de votre site Web et de son
+                    contenu pour obtenir un meilleur classement dans les moteurs de recherche pour les mots clés
+                    pertinents et attirer plus de trafic organique.
+                </li>
+                <li><span class="highlight">les flyers</span></li>
+                <li><span class="highlight">les salons des métiers et des industries</span></li>
+            </ul>
+            <p>Après de 10h30 à 11h30 un des <span class="highlight">développeurs</span> m’à montré comment ils règlent
+                les bugs. Pour commencer ils essayent de reproduire le bug et une fois trouvé il cherchent dans le
+                programme de où vient le problème, ils peuvent donc ensuite le régler.
+            </p>
+            <p>Ensuite de 14h à 15h il y a eu une réunion d’affinage pour l’équipe rouge qui permet à l’équipe de se
+                mettre d’accord sur comment il vont faire pour régler les bugs et faire des optimisation mais aussi voir
+                si cela fonctionne.
+            </p>
+            <p>Pour finir de 15h à 16h30 je suis allé à une réunion entre la <span class="highlight">responsable
+                    client</span> qui formait une <span class="highlight">commercial</span> sur ce qu’est un <span
+                    class="highlight">SPC / MSP</span> (maîtrise statistique des procédés).
+            </p>
+
+            <h4><u><p>Mercredi 22/01 :</p></u></h4>
+
+            <p>De 9h à 10h je suis allé à la réunion Copil, comme Lundi ils ont discuté de l'avancée des débugs mais
+                aussi de ce qu'il faut régler et comme
+            </p>
+            <p>Ensuite de 10h30 à 10h50 j’ai pû voir une des personnes travaillant dans le <span
+                    class="highlight">service support</span> (hotline). Ils sont composés d'un manager et de trois
+                techniciens.
+                Dans leur métier ils font :
+            <p><span class="highlight">Du support (60%) :</span></p>
+            </p>
+            <ul>
+                <li>font les tickets pour reprogrammer les bugs
+                </li>
+            </ul>
+            <p><span class="highlight">Du rpojet (30%) :</span>
+            </p>
+            <p>Intervention technique :</p>
+            <ul>
+                <li>installation</li>
+                <li>mise à jour</li>
+                <li>SQL request</li>
+            </ul>
+            <p><span class="highlight">Mais aussi des licenses et livraisons de logiciels (5%) :</span></p>
+            <ul>
+                <li>licences</li>
+                <li>logiciel</li>
+            </ul>
+            <p><span class="highlight">Et enfin du soutien interne (3%) :</span></p>
+            <ul>
+                <li>équipes commerciales</li>
+                <li>maquettes</li>
+            </ul>
+            <p>Puis après jusqu’à 11h15 j’ai pû discuter avec la <span class="highlight">secrétaire</span> et donc lui
+                poser des questions sur l’entreprise afin de remplir ma liste de questions pour le rapport de stage.
+            </p>
+
+            <p> <h4><u>Jeudi 23/01 :</u></h4></p>
+
+            <p>De 9h15 à 10h je suis allé en réunion de travail en distanciel. Ils ont discuté pour déterminer quels
+                sont les tests à faire pour permettre de voir si leurs modifications fonctionnent.</p>
+            <p>Ensuite de 10h45 à 11h j’ai eu l’occasion de discuter avec le <span class="highlight">patron</span> de
+                l’entreprise. Nous avons pû parler de mon parcours avenir mais aussi de comment et quels sont ses
+                critères pour embaucher des personnes dans son entreprise.
+            </p>
+            <p>L’après midi j’ai donc pû commencer mon rapport de stage en site internet. Pour cela j’ai dû faire de la
+                programmation.
+            </p>
+
+            <h4><u><p>Vendredi 24/01 :</p></u></h4>
+
+            <p>De 9h à 10h je suis allé en réunion de copil comme Lundi et Mercredi. Ils ont abordé les mêmes sujets que
+                la dernière fois.</p>
+            <p>Ensuite de 10h15 à 11h30 j’ai pû assister à la réunion de sprint review de l’équipe rouge. L’équipe
+                explique ce qu’ils ont fait lors de ces 3 semaines de sprint.
+            </p>
+            <div class="centered_box">
+                <img src="./Bureau.jpeg"image développeur" title="Image développement" class="imagebureau">
+            </div>
+
+        </nav>
+        <p>
+        <h3 id="vocabulaire" class="titre">Un peu de vocabulaire :</h3>
+        </p>
+        <nav class="cadre">
+            <ul>
+                <li><span class="highlight">Scrum :</span> carde de travail holistique itératif qui se concentre sur les
+                    buts communs en livrant de manière productive et créative des produits de la plus grande valeur
+                    possible</li>
+                <li><span class="highlight">Sprint :</span> courte période d’environ 3 semaine chacune découpant
+                    l’objectif final en plusieurs sous objectifs</li>
+                <li><span class="highlight">Ticket :</span> tâche à faire dû à un bug</li>
+            </ul>
+        </nav>
+
+        <p>
+        <h3 id="services" class="titre">Quels sont les différents services dans cette entreprise ?</h3>
+        </p>
+        <nav class="cadre organigramme">
+            <div>
+                <ul>
+                    <li><span class="highlight">Commercial :</span> vend les produits</li>
+                    <li><span class="highlight">Service client :</span> assiste et accompagne les acheteurs</li>
+                    <li><span class="highlight">Support :</span> en cas de problème avec les produits vendus</li>
+                    <li><span class="highlight">Qualité :</span> vérifier le produit</li>
+                    <li><span class="highlight">Développeurs :</span> développent le produit</li>
+                    <li><span class="highlight">Product Owner :</span> dirige les équipes</li>
+                    <li><span class="highlight">IT :</span> cybersécurité et entretien des ordinateurs</li>
+                </ul>
+            </div>
+            <div>
+                <a href="./organigramme.jpeg"
+                onclick="window.open(this.href, 'photo', 'height=1200, width=1600, top=0, left=750, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=yes, status=no'); return false;"><img
+                    src="./organigramme.jpeg" alt="Athos 8 mois pile" class="imageorga" /></a>
+            </div>
+        </nav>
+
+        <p>
+        <h3 class="titre">Comment se compose une équipe scrum ?</h3>
+        </p>
+        <nav class="cadre">
+            <ul>
+                <li><span class="highlight">Product Owner :</span> donner le cap / les sujets prioritaires / maximiser
+                    la valeur du produit</li>
+                <li><span class="highlight">Scrum Master :</span> assurer que le cadre “scrum” est respecté et qu’il n’y
+                    ai pas de blocages</li>
+                <li><span class="highlight">Développeurs</span></li>
+                <li><span class="highlight">Testeur / Qualité</span> vérifier que le code libéré répond aux exigences
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
